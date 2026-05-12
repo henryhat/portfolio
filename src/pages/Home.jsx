@@ -1,14 +1,19 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import About from '../components/About'
+import HeroSection from '../components/HeroSection'
+import ContactForm from '../components/ContactForm'
+
 
 const Home = () => {
   return (
-    <div>
-        <Navbar />
-        <About />
+    <div className="scroll-behavior: scroll-smooth">
+      <Navbar />
+      <section id='home'>
+        <HeroSection />
+      </section>
+      <ContactForm />
     </div>
-  )
+  );
 }
 
 export default Home

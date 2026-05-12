@@ -31,7 +31,8 @@ Deadline: ${deadline}
   };
 
   return (
-    <section id="Contacts" className="min-h-screen bg-[#050816] flex items-center justify-center px-4 py-16">
+    <section id="ContactForm" 
+     className="min-h-screen bg-[#050816] flex items-center justify-center px-4 py-16">
       <div className="w-full max-w-2xl bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl p-8 shadow-2xl mt-20">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">

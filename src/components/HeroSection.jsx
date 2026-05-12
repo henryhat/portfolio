@@ -1,7 +1,8 @@
-import { FaGithub, FaLinkedin, FaArrowRight, FaWhatsapp } from "react-icons/fa";
+import Socials from "./Socials"
+import {FaArrowRight} from "react-icons/fa";
 import PP2 from "../assets/PP2.png"
 
-function About() {
+function HeroSection() {
   return (
     <section className="relative min-h-screen pt-28 bg-[#050816] text-white overflow-hidden flex items-center px-6 md:px-20">
       {/* Background Glow Effects */}
@@ -39,7 +40,7 @@ function About() {
             </button>
 
             <button className="px-7 py-4 rounded-2xl border border-white/20 hover:bg-white/30 duration-300">
-              Hire Me
+              <a href="#ContactForm">Hire Me</a>
             </button>
           </div>
 
@@ -60,20 +61,7 @@ function About() {
               <p className="text-gray-400 text-sm">Passion</p>
             </div>
           </div>
-
-          {/* Social Icons */}
-          <div className="flex gap-5 pt-3 text-2xl text-gray-400 mb-5">
-            <a href="https://github.com/henryhat">
-              <FaGithub className="hover:text-white cursor-pointer duration-300" />
-            </a>
-            <a href="https://www.linkedin.com/in/odeyale-ayobami-henry-123855390?utm_source=share_via&utm_content=profile&utm_medium=member_android">
-              <FaLinkedin className="hover:text-blue-400 cursor-pointer duration-300" />
-            </a>
-            <a href="https://wa.me/qr/URUROKTVR4CWN1">
-              {" "}
-              <FaWhatsapp className="hover:text-green-400 cursor-pointer duration-300" />
-            </a>
-          </div>
+          <Socials />
         </div>
 
         {/* RIGHT SIDE */}
@@ -97,4 +85,4 @@ function About() {
   );
 }
 
-export default About;
+export default HeroSection;
