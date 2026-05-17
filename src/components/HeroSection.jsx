@@ -1,7 +1,12 @@
-import Socials from "./Socials"
-import {FaArrowRight} from "react-icons/fa";
-import PP2 from "../assets/PP2.png"
-
+import {
+  FaGithub,
+  FaLinkedin,
+  FaWhatsapp,
+  FaArrowRight,
+} from "react-icons/fa";
+import PP2 from "../assets/PP2.png";
+import About from './About'
+import Skills from './Skills'
 function HeroSection() {
   return (
     <section className="relative min-h-screen pt-28 bg-[#050816] text-white overflow-hidden flex items-center px-6 md:px-20">
@@ -24,14 +29,12 @@ function HeroSection() {
           </h1>
 
           <h2 className="text-2xl md:text-5xl font-bold text-gray-200">
-            Frontend Developer crafting premium web experiences.
+            Frontend Developer/Engineer crafting premium web experiences.
           </h2>
 
-          <p className="text-gray-400 text-lg max-w-xl leading-relaxed">
-            I build fast, responsive and visually stunning websites using React,
-            Tailwind CSS and modern frontend tools that help brands stand out
-            online.
-          </p>
+          <div>
+            <About />
+          </div>
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4">
@@ -53,7 +56,7 @@ function HeroSection() {
 
             <div>
               <h3 className="text-2xl font-bold text-blue-400">3+</h3>
-              <p className="text-gray-400 text-sm">Months Learning</p>
+              <p className="text-gray-400 text-sm">Months of Building</p>
             </div>
 
             <div>
@@ -61,26 +64,41 @@ function HeroSection() {
               <p className="text-gray-400 text-sm">Passion</p>
             </div>
           </div>
-          <Socials />
+            <Skills/>
+          <div id="contact" className="scroll-mt-28">
+            {/* Social Icons */}
+            <div className="flex gap-5 pt-3 text-2xl text-gray-400 mb-5">
+              <a href="https://github.com/henryhat">
+                <FaGithub className="hover:text-white cursor-pointer duration-300 text-4xl" />
+              </a>
+              <a href="https://www.linkedin.com/in/odeyale-ayobami-henry-123855390?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                <FaLinkedin className="hover:text-blue-400 cursor-pointer duration-300 text-4xl" />
+              </a>
+              <a href="https://wa.me/qr/URUROKTVR4CWN1">
+                {" "}
+                <FaWhatsapp className="hover:text-green-400 cursor-pointer duration-300 text-4xl" />
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="flex justify-center">
-          <div className="relative group">
+        {/* <div className="flex justify-center">
+          <div className="relative group"> */}
             {/* Rotating Glow Border */}
-            <div className="absolute inset-0 rounded-full bg-linear-to-r from-pink-300 to-blue-500 blur-xl opacity-70 animate-spin-slow"></div>
+            {/* <div className="absolute inset-0 rounded-full bg-linear-to-r from-pink-300 to-blue-500 blur-xl opacity-70 animate-spin-slow"></div> */}
 
             {/* Image */}
-            <div className="relative w-80 h-80 `md:w-105` `md:h-105` rounded-full p-2 bg-white/10 backdrop-blur-xl border border-white/10 mt-(-10)">
+            {/* <div className="relative w-80 h-80 `md:w-105` `md:h-105` rounded-full p-2 bg-white/10 backdrop-blur-xl border border-white/10 mt-(-10)">
               <img
                 src={PP2}
                 alt="Henry"
                 className="w-full h-full rounded-full object-cover hover:scale-105 duration-500"
-              />
+              /> */}
             </div>
-          </div>
-        </div>
-      </div>
+          {/* </div> */}
+        {/* </div>
+      </div> */}
     </section>
   );
 }

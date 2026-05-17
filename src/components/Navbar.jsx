@@ -39,12 +39,8 @@ function Navbar() {
 
           {/* CTA Button */}
           <li>
-            <button
-              className="hidden md:block px-6 py-3 rounded-xl bg-linear-to-r from-pink-500 to-blue-500 font-semibold hover:scale-105 duration-300 shadow-lg"
-            >
-              <a href="#ContactForm">
-              Let’s Talk
-              </a>
+            <button className="hidden md:block px-6 py-3 rounded-xl bg-linear-to-r from-pink-500 to-blue-500 font-semibold hover:scale-105 duration-300 shadow-lg">
+              <a href="#ContactForm">Let’s Talk</a>
             </button>
           </li>
           {/* Mobile Menu Button */}
@@ -61,7 +57,7 @@ function Navbar() {
           <div className="md:hidden bg-[#0b1023]/95 backdrop-blur-xl border-t border-white/10 px-6 py-6">
             <ul className="flex flex-col gap-5 text-gray-300 font-medium">
               <li>
-                <a href="#home" onClick={() => setMenuOpen(true)}>
+                <a href="#home" onClick={() => setMenuOpen(false)}>
                   Home
                 </a>
               </li>
@@ -85,22 +81,15 @@ function Navbar() {
               </li>
 
               <li>
-                <a href="#contact"
-                 onClick={() => setMenuOpen(false)}>
+                <a href="#contact" onClick={() => setMenuOpen(false)}>
                   Contact
                 </a>
               </li>
-
-              <a
-                href="#ContactForm"
-                onClick={() => {
-                  setMenuOpen(false);
-                  setShowForm(true);
-                }}
-                className="mt-2 px-6 py-3 rounded-xl bg-linear-to-r from-pink-500 to-blue-500 text-white text-center font-semibold"
-              >
-                Let’s Talk
-              </a>
+              <li>
+                <button className="hidden md:block px-6 py-3 rounded-xl bg-linear-to-r from-pink-500 to-blue-500 font-semibold hover:scale-105 duration-300 shadow-lg">
+                  <a href="#ContactForm">Let’s Talk</a>
+                </button>
+              </li>
             </ul>
           </div>
         )}
