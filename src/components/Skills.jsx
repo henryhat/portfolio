@@ -57,7 +57,7 @@ function Skills() {
       </div>
 
       {/* Skills Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
         {skills.map((skill, index) => (
           <div
             key={index}

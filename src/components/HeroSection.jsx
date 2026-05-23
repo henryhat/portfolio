@@ -7,6 +7,8 @@ import {
 import PP2 from "../assets/PP2.png";
 import About from './About'
 import Skills from './Skills'
+import { FaTwitter, FaX } from "react-icons/fa6";
+import Projects from "./Projects"
 function HeroSection() {
   return (
     <section className="relative min-h-screen pt-28 bg-[#050816] text-white overflow-hidden flex items-center px-6 md:px-20">
@@ -38,13 +40,19 @@ function HeroSection() {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4">
-            <button className="px-7 py-4 rounded-2xl bg-linear-to-r from-pink-400 to-blue-400 font-semibold hover:scale-105 duration-300 flex items-center gap-2 shadow-xl">
-              View Projects <FaArrowRight />
+            <button className="px-6 py-4 rounded-2xl bg-linear-to-r from-pink-400 to-blue-400 font-semibold hover:scale-105 duration-300 flex items-center gap-2 shadow-xl">
+              <a href="#projects">
+                {" "}View Projects <FaArrowRight />
+              </a>
             </button>
 
             <button className="px-7 py-4 rounded-2xl border border-white/20 hover:bg-white/30 duration-300">
               <a href="#ContactForm">Hire Me</a>
             </button>
+          </div>
+
+          <div>
+            <Projects />
           </div>
 
           {/* Stats */}
@@ -55,7 +63,7 @@ function HeroSection() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-blue-400">3+</h3>
+              <h3 className="text-2xl font-bold text-blue-400">6+</h3>
               <p className="text-gray-400 text-sm">Months of Building</p>
             </div>
 
@@ -64,7 +72,7 @@ function HeroSection() {
               <p className="text-gray-400 text-sm">Passion</p>
             </div>
           </div>
-            <Skills/>
+          <Skills />
           <div id="contact" className="scroll-mt-28">
             {/* Social Icons */}
             <div className="flex gap-5 pt-3 text-2xl text-gray-400 mb-5">
@@ -78,6 +86,9 @@ function HeroSection() {
                 {" "}
                 <FaWhatsapp className="hover:text-green-400 cursor-pointer duration-300 text-4xl" />
               </a>
+              <a href="https://x.com/henry_doestech">
+                <FaTwitter className="hover:text-blue-400 cursor-pointer duration-300 text-4xl" />
+              </a>
             </div>
           </div>
         </div>
@@ -85,19 +96,19 @@ function HeroSection() {
         {/* RIGHT SIDE */}
         {/* <div className="flex justify-center">
           <div className="relative group"> */}
-            {/* Rotating Glow Border */}
-            {/* <div className="absolute inset-0 rounded-full bg-linear-to-r from-pink-300 to-blue-500 blur-xl opacity-70 animate-spin-slow"></div> */}
+        {/* Rotating Glow Border */}
+        {/* <div className="absolute inset-0 rounded-full bg-linear-to-r from-pink-300 to-blue-500 blur-xl opacity-70 animate-spin-slow"></div> */}
 
-            {/* Image */}
-            {/* <div className="relative w-80 h-80 `md:w-105` `md:h-105` rounded-full p-2 bg-white/10 backdrop-blur-xl border border-white/10 mt-(-10)">
+        {/* Image */}
+        {/* <div className="relative w-80 h-80 `md:w-105` `md:h-105` rounded-full p-2 bg-white/10 backdrop-blur-xl border border-white/10 mt-(-10)">
               <img
                 src={PP2}
                 alt="Henry"
                 className="w-full h-full rounded-full object-cover hover:scale-105 duration-500"
               /> */}
-            </div>
-          {/* </div> */}
-        {/* </div>
+      </div>
+      {/* </div> */}
+      {/* </div>
       </div> */}
     </section>
   );

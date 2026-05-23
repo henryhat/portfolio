@@ -40,7 +40,7 @@ Deadline: ${deadline}
         </h2>
 
         <p className="text-gray-400 mb-8">
-          Fill this form and send your project directly to my WhatsApp.
+          Fill this form and send your project details directly to my WhatsApp.
         </p>
 
         {/* Form */}
@@ -130,7 +130,7 @@ Deadline: ${deadline}
               required
               value={budget}
               onChange={(e) => setBudget(e.target.value)}
-              placeholder="₦500,000 / $500"
+              placeholder="₦/$"
               className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white outline-none focus:border-green-500"
             />
           </div>
