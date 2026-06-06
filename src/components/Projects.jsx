@@ -1,6 +1,7 @@
 import React from 'react'
 import Art from "../assets/Art.png"
 import Getty from '../assets/Getty.png'
+import Agric from "../assets/Agric.png"
 
 
 const projects = [
@@ -28,16 +29,17 @@ const projects = [
     tech3: "JavaScript",
   },
 
-  //   {
-  //     title: "E-Commerce UI",
-  //     description: "A sleek ecommerce frontend interface with premium design.",
-  //     image: "/ecommerce.png",
-  //     live: "https://your-live-link.com",
-  //     github: "https://github.com/yourusername",
-  //     tech1: "React",
-  //     tech2: "Tailwind",
-  //     tech3: "Firebase",
-  //   },
+  {
+    title: "Agrochemical E-Commerce",
+    description:
+      "A sleek ecommerce frontend interface with premium design displaying items for sales and a smooth ordering process.",
+    image: Agric,
+    live: "https://agroshop-six.vercel.app/",
+    github: "https://github.com/henryhat",
+    tech1: "React",
+    tech2: "Tailwind",
+    tech3: "JavaScript",
+  },
 ];
 function Projects() {
 return (
