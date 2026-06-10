@@ -2,7 +2,7 @@ import React from 'react'
 import Art from "../assets/Art.png"
 import Getty from '../assets/Getty.png'
 import Agric from "../assets/Agric.png"
-
+import ifinance from "../assets/ifinance.png"
 
 const projects = [
   {
@@ -35,6 +35,18 @@ const projects = [
       "A sleek ecommerce frontend interface with premium design displaying items for sales and a smooth ordering process.",
     image: Agric,
     live: "https://agroshop-six.vercel.app/",
+    github: "https://github.com/henryhat",
+    tech1: "React",
+    tech2: "Tailwind",
+    tech3: "JavaScript",
+  },
+
+   {
+    title: "Personal Finance Tracker",
+    description:
+      "This web app was built to aid financial accountability, allowing users to determine their income and expense flow.",
+    image: ifinance,
+    live: "https://personal-five-orpin.vercel.app",
     github: "https://github.com/henryhat",
     tech1: "React",
     tech2: "Tailwind",
